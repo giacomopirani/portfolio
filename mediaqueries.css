@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
+    margin-bottom: 3rem;
   }
 
   .section__pic-container {
@@ -44,8 +45,14 @@
     width: 100%;
     height: auto;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .profile-pic {
+    width: 300px !important;
+  }
   .surf-pic {
-    display: none;
+    width: 300px !important;
   }
 }
 
@@ -68,6 +75,11 @@
     font-size: 1rem;
   }
 
+  .about-details-container,
+  .experience-details-container {
+    width: 80%;
+  }
+
   h1,
   h2,
   p {
@@ -76,7 +88,7 @@
 
   input {
     height: 30px;
-    width: 200px;
+    width: 250px;
   }
   footer nav {
     height: fit-content;

@@ -91,42 +91,41 @@ a:hover {
 }
 
 .menu-links {
-  position: fixed;
+  position: absolute;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin-top: 30px;
+  margin-right: -33px;
+  top: 100%;
+  right: 0;
+  background-color: white;
   width: fit-content;
-  margin-inline-end: auto;
-  margin-top: 50px;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .menu-links a {
   display: block;
-  padding: 10px;
-  max-width: 100%;
+  padding: 5px 10px;
   text-align: center;
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .links {
   list-style: none;
-  border: 2px solid rgb(88, 88, 88);
-  background-color: rgb(98, 98, 98);
+  color: black;
 }
 
 .links:hover {
-  background-color: rgba(86, 86, 86, 0.748);
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .menu-links.open {
   max-height: 300px;
-  border-radius: 15px;
+
   transition: 4s;
 }
 
