@@ -50,9 +50,11 @@
 @media screen and (max-width: 650px) {
   .profile-pic {
     width: 300px !important;
+    height: 400px !important;
   }
   .surf-pic {
     width: 300px !important;
+    height: 500px !important;
   }
 }
 
