@@ -91,14 +91,13 @@ a:hover {
 }
 
 .menu-links {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
-  top: 100%;
-  left: -400px;
   width: fit-content;
+  margin-inline-end: auto;
+  margin-top: 50px;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
@@ -107,8 +106,9 @@ a:hover {
 .menu-links a {
   display: block;
   padding: 10px;
+  max-width: 100%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 1s ease-in-out;
@@ -116,10 +116,8 @@ a:hover {
 
 .links {
   list-style: none;
-  border: 2px solid rgb(236, 98, 0);
-  box-shadow: orangered;
+  border: 2px solid rgb(88, 88, 88);
   background-color: rgb(98, 98, 98);
-  border-radius: 15px;
 }
 
 .links:hover {
@@ -185,6 +183,8 @@ section-container {
   border-radius: 50px;
   border: 2px solid black;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 40);
+  width: 550px;
+  height: max-content;
 }
 
 .section__text {
@@ -251,7 +251,6 @@ section-container {
 .btn-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
 }
 
 .btn {
@@ -308,7 +307,6 @@ section-container {
   justify-content: center;
   flex-direction: column;
   max-width: 700px;
-  margin-left: 50px;
 }
 
 .about-pic {
@@ -328,6 +326,10 @@ section-container {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .years {
@@ -348,6 +350,7 @@ section-container {
 .section-container {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
 /* EXPERIENCE SECTION */
@@ -430,7 +433,7 @@ article {
   display: flex;
   flex-direction: column;
   font-size: 30px;
-  margin-left: 10px;
+
   gap: 0.5rem;
 }
 
