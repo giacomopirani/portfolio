@@ -56,6 +56,22 @@
     width: 300px !important;
     height: 500px !important;
   }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .btn1 {
+    width: 50%;
+    height: 70px;
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -99,7 +115,8 @@
   }
 
   .end-footer {
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 
   .nav-links {
